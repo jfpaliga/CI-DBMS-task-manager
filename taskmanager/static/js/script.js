@@ -5,19 +5,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    // modal initialisation
     let delete_modal = document.querySelectorAll('.modal');
     M.Modal.init(delete_modal);
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+    // datepicker initialisation
     let datepicker = document.querySelectorAll('.datepicker');
     M.Datepicker.init(datepicker, {
         format: "dd mmmm, yyyy",
         i18n: { done: "Select" }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+    // select initialisation
     let selects = document.querySelectorAll('select');
     M.FormSelect.init(selects);
+
+    // collapsible initialisation
+    let collapsibles = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibles);
 });
